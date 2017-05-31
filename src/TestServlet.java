@@ -18,8 +18,7 @@ import java.util.List;
 /**
  * Created by Serug on 21.05.2017.
  */
-//@WebServlet(name = "TestServlet", urlPatterns = {"/testServlet", "/make_order.jsp"})
-@WebServlet(name = "TestServlet", urlPatterns = {"/TestServlet", "/open_page"})
+@WebServlet(name = "TestServlet")
 public class TestServlet extends HttpServlet implements DAOCreator {
 
     @EJB
@@ -28,6 +27,8 @@ public class TestServlet extends HttpServlet implements DAOCreator {
     private ClientDAO clientDAO;
     @EJB
     private OrderDAO orderDAO;
+    @EJB
+    private UserDAO userDAO;
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         ActionManager.getAction(request, this).execute(request, response);    }
@@ -49,5 +50,10 @@ public class TestServlet extends HttpServlet implements DAOCreator {
     @Override
     public OrderDAO getOrderDAO() {
         return orderDAO;
+    }
+
+    @Override
+    public UserDAO getUserDAO() {
+        return userDAO;
     }
 }

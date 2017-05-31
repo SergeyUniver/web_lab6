@@ -9,6 +9,8 @@ import java.util.Date;
  */
 public class SessionHelper {
 
+    public static final String USER_ATTR = "user";
+
     private Date lastAccessTime;
     private int visitCount;
 

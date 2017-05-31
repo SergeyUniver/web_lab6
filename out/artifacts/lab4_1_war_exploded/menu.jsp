@@ -5,7 +5,8 @@
 <%@ page import="actions.SessionHelper" %>
 <%@ page import="action.Action" %>
 <%@ page import="entities.Dish" %>
-<%@ page import="actions.ShowMenuAction" %><%--
+<%@ page import="actions.ShowMenuAction" %>
+<%@ page import="actions.EditMenuAction" %><%--
   Created by IntelliJ IDEA.
   User: Serug
   Date: 21.05.2017
@@ -56,10 +57,11 @@
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li><a href="index.jsp">Home</a></li>
-                <li class="active" ><a href="open_page?action=SHOW_MENU">Menu</a></li>
-                <li><a href="open_page?action=MAKE_ORDER">Make order</a></li>
-                <li><a href="open_page?action=SHOW_ACCEPTED_ORDERS">Accepted orders</a></li>
-                <li><a href="open_page?action=SHOW_ORDERS_BY_CLIENT&client_id=1">Order</a></li>
+                <li class="active"><a href="TestServlet?action=SHOW_MENU">Menu</a></li>
+                <li><a href="TestServlet?action=MAKE_ORDER">Make order</a></li>
+                <li><a href="TestServlet?action=SHOW_ACCEPTED_ORDERS">Accepted orders</a></li>
+                <li><a href="TestServlet?action=SHOW_ORDERS_BY_CLIENT&client_id=1">Order</a></li>
+                <li><a href="TestServlet?action=LOG_OUT">Log out</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
@@ -74,10 +76,14 @@
                 <h2>Info about menu</h2>
                 <table class="table table-bordered">
                     <thead>
+                    <% boolean isAdmin = (Boolean) session.getAttribute(ShowMenuAction.IS_ADMIN_PARAM); %>
                     <tr>
                         <th>Id</th>
                         <th>Name</th>
                         <th>Cost</th>
+                        <% if (isAdmin) { %>
+                        <th>Edit</th>
+                        <% } %>
                     </tr>
                     </thead>
                     <tbody>
@@ -92,6 +98,12 @@
                         </td>
                         <td><%= dish.getCost()%>
                         </td>
+                        <% if (isAdmin) { %>
+                        <td>
+                            <a href="TestServlet?action=EDIT_MENU&<%= EditMenuAction.DISH_ID_PARAM%>=<%= dish.getId()%>"
+                               name="Edit">Edit</a>
+                        </td>
+                        <% } %>
                     </tr>
                     <%
                         }

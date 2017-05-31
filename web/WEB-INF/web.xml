@@ -7,4 +7,24 @@
         <servlet-name>TestServlet</servlet-name>
         <servlet-class>TestServlet</servlet-class>
     </servlet>
+    <servlet-mapping>
+        <servlet-name>TestServlet</servlet-name>
+        <url-pattern>/TestServlet</url-pattern>
+    </servlet-mapping>
+    <filter>
+        <filter-name>CheckSign</filter-name>
+        <filter-class>filters.SignUpFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>CheckSign</filter-name>
+        <servlet-name>TestServlet</servlet-name>
+    </filter-mapping>
+    <filter>
+        <filter-name>CheckAuth</filter-name>
+        <filter-class>filters.CheckAuth</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>CheckAuth</filter-name>
+        <servlet-name>TestServlet</servlet-name>
+    </filter-mapping>
 </web-app>

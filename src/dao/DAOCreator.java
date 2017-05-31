@@ -8,6 +8,7 @@ public interface DAOCreator {
     ClientDAO getClientDAO();
     DishDAO getDishDAO();
     OrderDAO getOrderDAO();
+    UserDAO getUserDAO();
 
 
 }

@@ -60,10 +60,11 @@
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li><a href="index.jsp">Home</a></li>
-                <li><a href="open_page?action=SHOW_MENU">Menu</a></li>
-                <li class="active"><a href="open_page?action=MAKE_ORDER">Make order</a></li>
-                <li><a href="open_page?action=SHOW_ACCEPTED_ORDERS">Accepted orders</a></li>
-                <li><a href="open_page?action=SHOW_ORDERS_BY_CLIENT&client_id=1">Order</a></li>
+                <li><a href="TestServlet?action=SHOW_MENU">Menu</a></li>
+                <li class="active"><a href="TestServlet?action=MAKE_ORDER">Make order</a></li>
+                <li><a href="TestServlet?action=SHOW_ACCEPTED_ORDERS">Accepted orders</a></li>
+                <li><a href="TestServlet?action=SHOW_ORDERS_BY_CLIENT&client_id=1">Order</a></li>
+                <li><a href="TestServlet?action=LOG_OUT">Log out</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
@@ -73,7 +74,7 @@
 
     <div class="starter-template">
         <form id="bootstrapSelectForm" method="post" class="form-horizontal">
-            <form action="${pageContext.request.contextPath}/TestServlet" >
+            <form action="TestServlet" >
                 <div class="form-group">
                     <label class="col-xs-3 control-label">Product</label>
                     <div class="col-xs-5 selectContainer">

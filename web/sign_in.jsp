@@ -70,12 +70,12 @@
 
             <form action="TestServlet">
                 <input type="hidden" name="action" value="SIGN_IN"/>
-                <p>Введите имя:
+                <p>Input login:
                     <input name="login"/>
-                <p>Введите пароль:
+                <p>Input password:
                     <input type="password" name="password"/>
                 <P>
-                    <input type="reset" value="Сбросить">    <input type="submit" value="Login">
+                    <input type="reset" value="Reset">    <input type="submit" value="Login">
             </form>
             <a href="sign_up.jsp">Register</a>
         </div>

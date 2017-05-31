@@ -70,7 +70,7 @@
                 <p>Input password:
                     <input type="password" name="password"/>
                 <P>
-                    <input type="reset" value="Reset"><input type="submit" value="Register">
+                    <input type="reset" value="Reset">     <input type="submit" value="Register">
             </form>
             <a href="sign_in.jsp">Login</a>
         </div>

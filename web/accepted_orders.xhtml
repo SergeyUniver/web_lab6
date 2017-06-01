@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns:h="http://xmlns.jcp.org/jsf/html" xmlns:f="http://xmlns.jcp.org/jsf/core">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <link rel="shortcut icon" href="http://www.bootstrap-3.ru/assets/ico/favicon.ico"/>
+
+    <title>Web</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/template.css" rel="stylesheet"/>
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]>
+    <script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css"></style>
+</head>
+
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Restaurant</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <h:form>
+                    <li class="active"><h:commandLink action="#{index.indexPage}" value="Home"/></li>
+                    <li><h:commandLink action="#{index.menuPage}" value="Menu"/></li>
+                    <li><h:commandLink action="#{index.makeOrderPage}" value="Make order"/></li>
+                    <li><h:commandLink action="#{index.acceptedOrdersPage}" value="Accepted orders"/></li>
+                    <li><h:commandLink action="#{index.ordersByClientPage}" value="Order"/></li>
+                    <li><h:commandLink action="#{index.logOutPage}" value="Log out"/></li>
+                </h:form>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+<h:form>
+
+    <h:dataTable value="#{accepted_orders.orders}" var="order"
+                 styleClass="authorTable"
+                 headerClass="authorTableHeader"
+                 rowClasses="authorTableOddRow,authorTableEvenRow">
+
+        <h:column><f:facet name="header">ID</f:facet>
+            #{order.id}
+        </h:column>
+
+        <h:column><f:facet name="header">Dish</f:facet>
+            #{order.dishByDishId.name}
+        </h:column>
+        <h:column><f:facet name="header">Count</f:facet>
+            #{order.dishCount}
+        </h:column>
+    </h:dataTable>
+</h:form>
+</body>
+</html>

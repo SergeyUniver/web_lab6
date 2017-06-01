@@ -34,5 +34,17 @@
     <orderEntry type="library" name="org.eclipse.persistence.jpa-2.6.4" level="project" />
     <orderEntry type="library" name="jsf-api-2.1" level="project" />
     <orderEntry type="library" name="jsf-api-2.1" level="project" />
+    <orderEntry type="library" name="j2html-0.7" level="project" />
+    <orderEntry type="library" name="javax.websocket-api-1.1" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/gson-1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="gson-2.8.1" level="project" />
   </component>
 </module>

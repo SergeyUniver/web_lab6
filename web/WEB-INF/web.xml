@@ -4,58 +4,58 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
 
-    <welcome-file-list>
-        <welcome-file>web/faces/home.xhtml</welcome-file>
-    </welcome-file-list>
-
-    <servlet>
-        <servlet-name>Faces Servlet</servlet-name>
-        <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
-        <load-on-startup>1</load-on-startup>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>Faces Servlet</servlet-name>
-        <url-pattern>/faces/*</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>Faces Servlet</servlet-name>
-        <url-pattern>*.jsf</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>Faces Servlet</servlet-name>
-        <url-pattern>*.faces</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>Faces Servlet</servlet-name>
-        <url-pattern>*.xhtml</url-pattern>
-    </servlet-mapping>
-
+    <!--<welcome-file-list>-->
+        <!--<welcome-file>web/faces/home.xhtml</welcome-file>-->
+    <!--</welcome-file-list>-->
 
     <!--<servlet>-->
-        <!--<servlet-name>TestServlet</servlet-name>-->
-        <!--<servlet-class>TestServlet</servlet-class>-->
+        <!--<servlet-name>Faces Servlet</servlet-name>-->
+        <!--<servlet-class>javax.faces.webapp.FacesServlet</servlet-class>-->
+        <!--<load-on-startup>1</load-on-startup>-->
     <!--</servlet>-->
     <!--<servlet-mapping>-->
-        <!--<servlet-name>TestServlet</servlet-name>-->
-        <!--<url-pattern>/TestServlet</url-pattern>-->
+        <!--<servlet-name>Faces Servlet</servlet-name>-->
+        <!--<url-pattern>/faces/*</url-pattern>-->
     <!--</servlet-mapping>-->
-    <!--<filter>-->
-        <!--<filter-name>CheckSign</filter-name>-->
-        <!--<filter-class>filters.SignUpFilter</filter-class>-->
-    <!--</filter>-->
-    <!--<filter-mapping>-->
-        <!--<filter-name>CheckSign</filter-name>-->
-        <!--<servlet-name>TestServlet</servlet-name>-->
-    <!--</filter-mapping>-->
-    <!--<filter>-->
-        <!--<filter-name>CheckAuth</filter-name>-->
-        <!--<filter-class>filters.CheckAuth</filter-class>-->
-    <!--</filter>-->
-    <!--<filter-mapping>-->
-        <!--<filter-name>CheckAuth</filter-name>-->
-        <!--<servlet-name>TestServlet</servlet-name>-->
-    <!--</filter-mapping>-->
+
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>Faces Servlet</servlet-name>-->
+        <!--<url-pattern>*.jsf</url-pattern>-->
+    <!--</servlet-mapping>-->
+
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>Faces Servlet</servlet-name>-->
+        <!--<url-pattern>*.faces</url-pattern>-->
+    <!--</servlet-mapping>-->
+
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>Faces Servlet</servlet-name>-->
+        <!--<url-pattern>*.xhtml</url-pattern>-->
+    <!--</servlet-mapping>-->
+
+
+    <servlet>
+        <servlet-name>TestServlet</servlet-name>
+        <servlet-class>TestServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TestServlet</servlet-name>
+        <url-pattern>/TestServlet</url-pattern>
+    </servlet-mapping>
+    <filter>
+        <filter-name>CheckSign</filter-name>
+        <filter-class>filters.SignUpFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>CheckSign</filter-name>
+        <servlet-name>TestServlet</servlet-name>
+    </filter-mapping>
+    <filter>
+        <filter-name>CheckAuth</filter-name>
+        <filter-class>filters.CheckAuth</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>CheckAuth</filter-name>
+        <servlet-name>TestServlet</servlet-name>
+    </filter-mapping>
 </web-app>

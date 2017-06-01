@@ -2,7 +2,7 @@ var ws;
 
 function connect() {
     var username = document.getElementById("username").value;
-    ws = new WebSocket("ws://" + document.location.host + "/chat-websocket-application/chat/" + username);
+    ws = new WebSocket("ws://localhost:8080/lab4_1_war_exploded/echo/chat/" + username);
 
 
     ws.onmessage = function(event) {

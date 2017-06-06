@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Serug on 01.06.2017.
+ * Created by Ionas on 01.06.2017.
  */
 @ManagedBean(name = "menu", eager = true)
 @RequestScoped

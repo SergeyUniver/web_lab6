@@ -9,7 +9,7 @@ import java.util.logging.Logger;
 
 
 /**
- * Created by Serug on 01.06.2017.
+ * Created by Ionas on 01.06.2017.
  */
 public class MessageDecoder implements Decoder.Text<Message> {
     private final Logger log = Logger.getLogger(getClass().getName());

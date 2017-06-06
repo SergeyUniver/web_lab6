@@ -4,7 +4,7 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 
 /**
- * Created by Serug on 01.06.2017.
+ * Created by Ionas on 01.06.2017.
  */
 @ManagedBean(name = "edit_menu", eager = true)
 @RequestScoped

@@ -8,7 +8,7 @@
 <%@ page import="actions.ShowMenuAction" %>
 <%@ page import="actions.ShowAcceptedOrdersAction" %><%--
   Created by IntelliJ IDEA.
-  User: Serug
+  User: Ionas
   Date: 21.05.2017
   Time: 20:39
   To change this template use File | Settings | File Templates.
@@ -52,7 +52,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <%--<jsp:include page="body.jsp" flush="true"/>--%>
+            <a class="navbar-brand" href="index.jsp">Restaurant</a>
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
@@ -60,6 +60,7 @@
                 <li><a href="TestServlet?action=SHOW_MENU">Menu</a></li>
                 <li><a href="TestServlet?action=MAKE_ORDER">Make order</a></li>
                 <li class="active"><a href="TestServlet?action=SHOW_ACCEPTED_ORDERS">Accepted orders</a></li>
+                <li><a href="chat.jsp">Chat</a></li>
                 <li><a href="TestServlet?action=SHOW_ORDERS_BY_CLIENT&client_id=1">Order</a></li>
             </ul>
         </div><!--/.nav-collapse -->

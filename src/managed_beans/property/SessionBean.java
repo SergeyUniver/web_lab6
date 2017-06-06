@@ -11,7 +11,7 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 
 /**
- * Created by Serug on 01.06.2017.
+ * Created by Ionas on 01.06.2017.
  */
 @ManagedBean(name = "session_bean", eager = true)
 @SessionScoped

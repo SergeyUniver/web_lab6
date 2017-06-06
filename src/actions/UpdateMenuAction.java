@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Serug on 01.06.2017.
+ * Created by Ionas on 01.06.2017.
  */
 public class UpdateMenuAction extends Action implements IAction {
     public UpdateMenuAction(DAOCreator daoCreator) {

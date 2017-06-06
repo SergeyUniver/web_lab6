@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Serug on 21.05.2017.
+ * Created by Ionas on 21.05.2017.
  */
 public class ShowMenuAction extends Action implements IAction {
     public static final String MENU_PARAM = "menu";

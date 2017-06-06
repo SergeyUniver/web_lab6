@@ -6,7 +6,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * Created by Serug on 21.05.2017.
+ * Created by Ionas on 21.05.2017.
  */
 public interface IAction {
     void execute(HttpServletRequest request, HttpServletResponse response)

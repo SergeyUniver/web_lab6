@@ -1,6 +1,6 @@
 <%--
   Created by IntelliJ IDEA.
-  User: Serug
+  User: Ionas
   Date: 21.05.2017
   Time: 20:05
   To change this template use File | Settings | File Templates.
@@ -40,7 +40,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">Restaurant</a>
+            <a class="navbar-brand" href="index.jsp">Restaurant</a>
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
@@ -49,6 +49,7 @@
                 <li><a href="TestServlet?action=MAKE_ORDER">Make order</a></li>
                 <li><a href="TestServlet?action=SHOW_ACCEPTED_ORDERS">Accepted orders</a></li>
                 <li><a href="TestServlet?action=SHOW_ORDERS_BY_CLIENT&client_id=1">Order</a></li>
+                <li><a href="chat.jsp">Chat</a></li>
                 <li><a href="TestServlet?action=LOG_OUT">Log out</a></li>
             </ul>
         </div><!--/.nav-collapse -->

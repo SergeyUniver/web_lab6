@@ -6,7 +6,7 @@ import dao.DAOCreator;
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * Created by Serug on 21.05.2017.
+ * Created by Ionas on 21.05.2017.
  */
 public class ActionManager {
     /**

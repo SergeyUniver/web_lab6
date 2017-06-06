@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Serug on 21.05.2017.
+ * Created by Ionas on 21.05.2017.
  */
 public class ShowOrderByClientAction extends Action implements IAction {
 

@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Serug on 21.05.2017.
+ * Created by Ionas on 21.05.2017.
  */
 public class MakeOrderAction extends Action implements IAction {
 

@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.util.Date;
 
 /**
- * Created by Serug on 01.06.2017.
+ * Created by Ionas on 01.06.2017.
  */
 public class LogOutAction extends Action implements IAction {
     public LogOutAction(DAOCreator daoCreator) {

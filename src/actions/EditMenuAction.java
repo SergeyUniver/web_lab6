@@ -13,7 +13,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
- * Created by Serug on 01.06.2017.
+ * Created by Ionas on 01.06.2017.
  */
 public class EditMenuAction extends Action implements IAction {
     public static final String DISH_ID_PARAM = "dish_id";

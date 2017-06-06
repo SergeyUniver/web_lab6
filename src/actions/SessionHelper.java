@@ -5,7 +5,7 @@ import javax.servlet.http.HttpSession;
 import java.util.Date;
 
 /**
- * Created by Serug on 21.05.2017.
+ * Created by Ionas on 21.05.2017.
  */
 public class SessionHelper {
 

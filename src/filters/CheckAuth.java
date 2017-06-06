@@ -10,7 +10,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
- * Created by Serug on 31.05.2017.
+ * Created by Ionas on 31.05.2017.
  */
 public class CheckAuth implements Filter {
     public void destroy() {

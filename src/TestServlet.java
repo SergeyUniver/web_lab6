@@ -16,7 +16,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * Created by Serug on 21.05.2017.
+ * Created by Ionas on 21.05.2017.
  */
 @WebServlet(name = "TestServlet")
 public class TestServlet extends HttpServlet implements DAOCreator {

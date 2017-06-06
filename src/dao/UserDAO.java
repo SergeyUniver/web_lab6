@@ -7,7 +7,7 @@ import javax.ejb.Stateless;
 import java.util.List;
 
 /**
- * Created by Serug on 29.05.2017.
+ * Created by Ionas on 29.05.2017.
  */
 @Stateless
 public class UserDAO extends DAO{

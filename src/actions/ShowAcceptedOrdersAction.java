@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Serug on 21.05.2017.
+ * Created by Ionas on 21.05.2017.
  */
 public class ShowAcceptedOrdersAction extends Action implements IAction {
     public static final String ORDER_PARAM = "orders";

@@ -3,7 +3,7 @@ package action;
 import dao.DAOCreator;
 
 /**
- * Created by Serug on 21.05.2017.
+ * Created by Ionas on 21.05.2017.
  */
 public class Action {
 
